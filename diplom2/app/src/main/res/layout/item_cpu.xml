@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageCpuRecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nameCPUView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="-40dp"
+        android:text="@string/nameCPU"
+        app:layout_constraintBottom_toBottomOf="@+id/imageCpuRecycle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nameCPU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/nameCPUView"
+        app:layout_constraintTop_toTopOf="@+id/nameCPUView"
+        tools:text="i5-10400F" />
+
+    <TextView
+        android:id="@+id/nameBrandView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/nameCPUView"
+        app:layout_constraintTop_toBottomOf="@+id/nameCPU"
+        android:text="@string/nameBrand"/>
+
+    <TextView
+        android:id="@+id/nameBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/nameBrandView"
+        app:layout_constraintTop_toTopOf="@+id/nameBrandView"
+        tools:text="Intel" />
+
+    <TextView
+        android:id="@+id/CpuSocketView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/socketProcessor"
+        app:layout_constraintStart_toStartOf="@+id/nameBrandView"
+        app:layout_constraintTop_toBottomOf="@+id/nameBrand" />
+
+    <TextView
+        android:id="@+id/CpuSocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@+id/CpuSocketView"
+        app:layout_constraintTop_toTopOf="@+id/CpuSocketView"
+        tools:text="s1151" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
